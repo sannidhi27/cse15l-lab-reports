@@ -1,5 +1,5 @@
 ***
-# Italic part
+# *Italic part*
 *This part is in italics*
 ***
 ## Bold part
