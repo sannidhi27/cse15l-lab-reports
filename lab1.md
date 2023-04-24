@@ -13,7 +13,7 @@ Tutorial for creating a github page through remote access:
 
 3. Remotely connecting 
 * In order to remotely connect, if one has a mac (this was true in my case), they can directly remotely connect by running this line in the terminal:
-`$ ssh cs15lsp23zz@ieng6.ucsd.edu`
+```$ ssh cs15lsp23zz@ieng6.ucsd.edu```
 Where the `zz` can be substituted with the specific letters in each course specific account. 
 * In my case the course specific account did not work when I tried to remotely connect, nor did it work for any of my lab partners, so we used our normal tritonlink IDs which helped for the time being.
 ![Image](Remotely Connecting.png)
