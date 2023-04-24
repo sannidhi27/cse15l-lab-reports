@@ -23,5 +23,7 @@ Once remotely connected, trying a series of commands can help understand the ext
 * `cd ~`
 * `cd`
 * `ls -lat`
-![Image](Tring Commands.png)
-
+![Image](trying commands 1.png)
+as well as 
+* `ls -a`
+![Image](trying commands.png)
