@@ -5,6 +5,7 @@ Tutorial for creating a github page through remote access:
 * The first step is download the application VS Code, or any similar interface that would allow you to remotely connect. In my case, this application was already downloaded for a previous class, so I already had completed this step. 
 * However, if the application is not already downloaded, you can do so at this [Link](https://code.visualstudio.com/). This page will have step-by-step instructions to download and install VS Code on your computer. 
 * There are different versions for different major operating systems such as macOS (for Macs) and Windows (for PCs). Once downloaded, the application should look like the image below. (My VS Code is in dark mode). 
+* The image is on the next page due to formatting.
 ![Image](vscode.png)
 
 2. Creating an account for remote connection that is course specific `ieng6`
