@@ -7,23 +7,25 @@ links will be at the bottom of the report.
 1. `find -name`
 (Source: adamtheautomator.com)
 find -name is used to find any keyword/directory/file within the main directory it is within, which in this case is ./technical.
-> Example 1:
+* Example 1:
 This is an example in which I implore the find -name function to find a directory within the directory technical called plos. 
-> Command Line:
+This is useful to check for the existence of specific wanted directories as well as their paths. 
+Command Line:
 ```
 >sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -name "*plos"   
 ```
-> Output:
+Output:
 ```
 ./plos
 ```
-> Example 2:
+* Example 2:
 This is an example where I use the find -name function to find a file within the directory 911report within the technical directory.
-> Command Line:
+This is useful to check for the existence of specific wanted files and their paths.
+Command Line:
 ```
 sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -name "*chapter-1.txt"
 ```
-> Output:
+Output:
 ```
 ./911report/chapter-1.txt
 ```
@@ -31,13 +33,14 @@ sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -name "*chapter-1.txt"
 2. `find "name" type -d/-f`
 (Source: adamtheautomator.com)
 To specifically find files and directories as well as their paths. 
-> Example 1:
-Here I used the function to find the all of the directories within technical as well as their paths.
-> Command Line:
+* Example 1:
+Here I used the function to find the all of the directories within technical as well as their paths. This is useful to verify the status and paths of directories. 
+directories. 
+Command Line:
 ```
 sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -type d
 ```
-> Output: 
+Output: 
 ```
 .
 ./government
@@ -51,14 +54,14 @@ sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -type d
 ./biomed
 ./911report
 ```
-> Example 2:
+* Example 2:
 Searching for all of the files within technical would produce a very large output so instead I searched for one specific file
-while also checking that it was a file and tracing its path. 
-> Command Line: 
+while also checking that it was a file and tracing its path. This is useful to verify the status and paths of files.
+Command Line: 
 ```
 sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -type f -name "*commission_report.txt"
 ```
-> Output:
+Output:
 ```
 ./government/About_LSC/commission_report.txt
 ```
@@ -66,13 +69,13 @@ sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -type f -name "*commis
 3. `find . -name "letter*.filetype"`
 (Source: ChatGPT)
 This searches for all of the files of a specific filetype such as .txt that start with a given letter.
-> Example 1:
-Here I am searching for all of the files starting with an a that are .txt files. This is a common starting letter.
-> Command Line:
+* Example 1:
+Here I am searching for all of the files starting with an a that are .txt files. This is a common starting letter. This is useful to narrow down the search for files of the .txt type starting with an a.
+Command Line:
 ```
 sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -name "a*.txt"
 ```
-> Output:
+Output:
 ```
 ./government/Env_Prot_Agen/atx1-6.txt
 ./government/Gen_Account_Office/ai00134.txt
@@ -115,14 +118,14 @@ sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -name "a*.txt"
 ./biomed/ar104.txt
 ./biomed/ar328.txt
 ```
-> Example 2: 
+* Example 2: 
 Here I am searching for all of the files starting with an m that are .txt files. This is not as 
-common of a starting letter.
-> Command Line:
+common of a starting letter. This is useful to narrow down the search for files of the .txt type starting with an m.
+Command Line:
 ```
 sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -name "m*.txt"
 ```
-> Output:
+Output:
 ```
 ./government/Env_Prot_Agen/multi102902.txt
 ./government/Media/man_on_national_team.txt
@@ -131,13 +134,13 @@ sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -name "m*.txt"
 4. `find . -perm -permissioncode`
 (Source: ChatGPT)
 This searches for all of the files with the specified permission code (specific permissions).
-> Example 1:
-Here I explored the outcome of the permission code 600. Many files were found.
-> Command Line:
+* Example 1:
+Here I explored the outcome of the permission code 600. Many files were found. This is useful to see different specific permissions for different files.
+Command Line:
 ```
 sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -perm -600
 ```
-> Output:
+Output:
 ```
 ...
 ./biomed/1471-2121-4-4.txt
@@ -193,13 +196,13 @@ sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -perm -600
 ./911report/chapter-10.txt
 ./911report/chapter-11.txt ...
 ```
-> Example 2:
-Here I explored the outcome of the permission code 700. Many files were found.
-> Command Line:
+* Example 2:
+Here I explored the outcome of the permission code 700. Many files were found. his is useful to see different specific permissions for different files.
+Command Line:
 ```
 sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -perm -700
 ```
-> Output:
+Output:
 ```
 ...
 ./biomed/1471-2180-2-13.txt
