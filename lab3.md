@@ -1,11 +1,14 @@
 # Lab Report 3
 *** 
 ## Command: Find.
-The command I chose for this lab report was find. 
+The command I chose for this lab report was find. All the sources will be references intext throughout the report but the 
+links will be at the bottom of the report. 
 *** 
 1. `find -name`
+(Source: adamtheautomator.com)
 find -name is used to find any keyword/directory/file within the main directory it is within, which in this case is ./technical.
 > Example 1:
+This is an example in which I implore the find -name function to find a directory within the directory technical called plos. 
 > Command Line:
 ```
 >sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -name "*plos"   
@@ -15,6 +18,7 @@ find -name is used to find any keyword/directory/file within the main directory 
 ./plos
 ```
 > Example 2:
+This is an example where I use the find -name function to find a file within the directory 911report within the technical directory.
 > Command Line:
 ```
 sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -name "*chapter-1.txt"
@@ -24,17 +28,32 @@ sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -name "*chapter-1.txt"
 ./911report/chapter-1.txt
 ```
 ***
-2. `find "name" type -f`
+2. `find "name" type -d/-f`
+(Source: adamtheautomator.com)
+To specifically find files and directories as well as their paths. 
 > Example 1:
+Here I used the function to find the all of the directories within technical as well as their paths.
 > Command Line:
 ```
-sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -type f -name "*preface.txt"
+sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -type d
 ```
 > Output: 
 ```
-./911report/preface.txt
+.
+./government
+./government/About_LSC
+./government/Env_Prot_Agen
+./government/Alcohol_Problems
+./government/Gen_Account_Office
+./government/Post_Rate_Comm
+./government/Media
+./plos
+./biomed
+./911report
 ```
 > Example 2:
+Searching for all of the files within technical would produce a very large output so instead I searched for one specific file
+while also checking that it was a file and tracing its path. 
 > Command Line: 
 ```
 sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -type f -name "*commission_report.txt"
@@ -44,28 +63,76 @@ sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -type f -name "*commis
 ./government/About_LSC/commission_report.txt
 ```
 ***
-3. `find -name "name" -and -type d`
+3. `find . -name "letter*.filetype"`
+(Source: ChatGPT)
+This searches for all of the files of a specific filetype such as .txt that start with a given letter.
 > Example 1:
+Here I am searching for all of the files starting with an a that are .txt files. This is a common starting letter.
 > Command Line:
 ```
-sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -type f -name "*Annual_Fee.txt"
+sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -name "a*.txt"
 ```
 > Output:
 ```
-./government/Media/Annual_Fee.txt
+./government/Env_Prot_Agen/atx1-6.txt
+./government/Gen_Account_Office/ai00134.txt
+./government/Gen_Account_Office/ai9868.txt
+./government/Gen_Account_Office/ai2132.txt
+./government/Media/agency_expands.txt
+./biomed/ar331.txt
+./biomed/ar319.txt
+./biomed/ar79.txt
+./biomed/ar130.txt
+./biomed/ar118.txt
+./biomed/ar93.txt
+./biomed/ar68.txt
+./biomed/ar120.txt
+./biomed/ar297.txt
+./biomed/ar321.txt
+./biomed/ar309.txt
+./biomed/ar795.txt
+./biomed/ar408.txt
+./biomed/ar409.txt
+./biomed/ar422.txt
+./biomed/ar387.txt
+./biomed/ar778.txt
+./biomed/ar750.txt
+./biomed/ar624.txt
+./biomed/ar383.txt
+./biomed/ar619.txt
+./biomed/ar745.txt
+./biomed/ar792.txt
+./biomed/ar430.txt
+./biomed/ar140.txt
+./biomed/ar429.txt
+./biomed/ar774.txt
+./biomed/ar615.txt
+./biomed/ar601.txt
+./biomed/ar407.txt
+./biomed/ar799.txt
+./biomed/ar612.txt
+./biomed/ar149.txt
+./biomed/ar104.txt
+./biomed/ar328.txt
 ```
 > Example 2: 
+Here I am searching for all of the files starting with an m that are .txt files. This is not as 
+common of a starting letter.
 > Command Line:
 ```
-sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -type f -name "*journal.pbio.0020001.txt"
+sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -name "m*.txt"
 ```
 > Output:
 ```
-./plos/journal.pbio.0020001.txt
+./government/Env_Prot_Agen/multi102902.txt
+./government/Media/man_on_national_team.txt
 ```
 ***
-4. FIND 
+4. `find . -perm -permissioncode`
+(Source: ChatGPT)
+This searches for all of the files with the specified permission code (specific permissions).
 > Example 1:
+Here I explored the outcome of the permission code 600. Many files were found.
 > Command Line:
 ```
 sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -perm -600
@@ -127,6 +194,7 @@ sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -perm -600
 ./911report/chapter-11.txt ...
 ```
 > Example 2:
+Here I explored the outcome of the permission code 700. Many files were found.
 > Command Line:
 ```
 sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -perm -700
