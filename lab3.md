@@ -143,11 +143,6 @@ sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -perm -600
 Output:
 ```
 ...
-./biomed/1471-2121-4-4.txt
-./biomed/gb-2003-4-4-r28.txt
-./biomed/1471-230X-2-17.txt
-./biomed/1477-5956-1-1.txt
-./biomed/1471-2156-4-9.txt
 ./biomed/1471-2431-2-12.txt
 ./biomed/ar328.txt
 ./biomed/1471-2210-3-1.txt
@@ -205,11 +200,6 @@ sannidhikrovvidi@Sannidhis-MacBook-Pro technical % find . -perm -700
 Output:
 ```
 ...
-./biomed/1471-2180-2-13.txt
-./biomed/1471-2121-4-4.txt
-./biomed/gb-2003-4-4-r28.txt
-./biomed/1471-230X-2-17.txt
-./biomed/1477-5956-1-1.txt
 ./biomed/1471-2156-4-9.txt
 ./biomed/1471-2431-2-12.txt
 ./biomed/ar328.txt
@@ -263,6 +253,5 @@ Output:
 ## Sources:
 - Website: [Link](https://adamtheautomator.com/bash-find/)
 - ChatGPT
-***
 # Thank you!
 
