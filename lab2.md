@@ -1,6 +1,56 @@
 # Lab Report 2
 *** 
 ## Part 1
+This is where I built my web server `StringServer`. The incoming requests should look like this:
+```
+/add-message?s=<string>
+```
+The effect of this request is to add a new line with the string after the = to the existing string, resulting with the entire string so far.
+* My Code:
+```
+import java.io.IOException;
+import java.net.URI;
+
+class Handler implements URLHandler {
+    // The one bit of state on the server: a number that will be manipulated by
+    // various requests.
+    String runningString = "";
+
+    public String handleRequest(URI url) {
+        String urlString = url.getQuery();
+        if (url.getPath().equals("/")) {
+                return String.format(runningString);
+            }
+        else if (url.getPath().equals("/add-message")) {
+            if (urlString.contains("s=")) {
+                String[] urlStrings = url.getQuery().split("=");
+                if (urlStrings[0].equals("s")) {
+                    runningString = runningString + urlStrings[1] + "\n";
+                    return String.format(runningString);
+                }
+            }
+            return "404 Not Found!";
+
+        }
+        return runningString;
+    }
+}
+
+class StringServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
+
+```
+
 
 
 
