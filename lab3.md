@@ -273,6 +273,8 @@ For example, to search for all files with the extension .txt in the current dire
 arduino
 Copy code
 find . -name "*.txt"
+
+> From this information I was able to gain a better understanding of the find function as well as explain the file -name use. 
 ***
 2. how to use find in command line bash different ways.
 ***
@@ -304,6 +306,8 @@ arduino
 Copy code
 find . -perm -600
 These are just a few examples of how you can use the find command in different ways. The find command has many more options and can be combined with other commands to perform more complex searches and actions.
+
+> From this search result I was able to understand more applications of find, and chose a few to use for this lab report. 
 ***
 3. can you give me some more options?
 ***
@@ -337,6 +341,8 @@ Copy code
 find . -maxdepth 2 -type f
 This will search for all regular files at a depth of 2 in the directory hierarchy.
 These are just a few more examples of the many options you can use with the find command in Bash. The find command is a very powerful tool with many more options that can be combined to perform complex searches and actions.
+
+> From this search result I was able to understand more applications of find, and chose a few to use for this lab report. 
 
 # Thank you!
 
