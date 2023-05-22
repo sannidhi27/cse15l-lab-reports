@@ -254,6 +254,7 @@ Output:
 - Website: [Link](https://adamtheautomator.com/bash-find/)
 - ChatGPT
     - Questions & Answers:
+***
 1. how to use find -name in a directory.
 ***
 A) The find command is a powerful tool for searching for files and directories in a directory hierarchy based on various criteria. The -name option is used to search for files or directories that match a particular name pattern.
@@ -272,7 +273,7 @@ For example, to search for all files with the extension .txt in the current dire
 arduino
 Copy code
 find . -name "*.txt"
-
+***
 2. how to use find in command line bash different ways.
 ***
 A) The find command in Bash is a powerful tool for searching for files and directories in a directory hierarchy based on various criteria. Here are some different ways to use the find command in the command line:
