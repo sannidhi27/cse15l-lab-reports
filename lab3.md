@@ -274,7 +274,8 @@ arduino
 Copy code
 find . -name "*.txt"
 
-> From this information I was able to gain a better understanding of the find function as well as explain the file -name use. 
+> From this information I was able to gain a better understanding of the find function as well as explain the file -name use. I tried
+> the function out on my own in VS Code as well which is the code for the use I have put on this lab report. 
 ***
 2. how to use find in command line bash different ways.
 ***
@@ -307,7 +308,10 @@ Copy code
 find . -perm -600
 These are just a few examples of how you can use the find command in different ways. The find command has many more options and can be combined with other commands to perform more complex searches and actions.
 
-> From this search result I was able to understand more applications of find, and chose a few to use for this lab report. 
+> From this search result I was able to understand more applications of find, and chose a few to use for this lab report. I tried 
+> out various functions on my own VS Code, and then selected a few for this lab report that provided me with interesting results. 
+> Thus, the information I used from this search was implemented in this lab report through the application of the functions provided
+> in my own VS Code. 
 ***
 3. can you give me some more options?
 ***
@@ -342,7 +346,11 @@ find . -maxdepth 2 -type f
 This will search for all regular files at a depth of 2 in the directory hierarchy.
 These are just a few more examples of the many options you can use with the find command in Bash. The find command is a very powerful tool with many more options that can be combined to perform complex searches and actions.
 
-> From this search result I was able to understand more applications of find, and chose a few to use for this lab report. 
+> I was not able to find enough functions I liked from the previous search, thus I prompted ChatGPT to provide me with more option. 
+> From this search result I was able to understand more applications of find, and chose a few to use for this lab report. I tried 
+> out various functions on my own VS Code, and then selected a few for this lab report that provided me with interesting results. 
+> Thus, the information I used from this search was implemented in this lab report through the application of the functions provided
+> in my own VS Code. 
 
 # Thank you!
 
