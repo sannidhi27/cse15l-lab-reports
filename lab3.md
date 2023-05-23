@@ -264,18 +264,17 @@ Output:
 
 To use find -name in a directory, follow these steps:
 
-Open a terminal window and navigate to the directory where you want to start the search.
-Type the following command:
-arduino
-Copy code
-find . -name "filename"
-Replace filename with the name of the file or directory that you want to search for. The . indicates the current directory, but you can replace it with the path of the directory you want to search in.
-Press Enter to execute the command.
-The find command will search for all files and directories that match the specified name pattern in the directory hierarchy and print their paths to the terminal.
-For example, to search for all files with the extension .txt in the current directory and its subdirectories, you can use the following command:
-arduino
-Copy code
-find . -name "*.txt"
+* Open a terminal window and navigate to the directory where you want to start the search.
+* Type the following command:
+
+      find . -name "filename"
+
+* Replace filename with the name of the file or directory that you want to search for. The . indicates the current directory, but you can replace it with the path of the directory you want to search in.
+* Press Enter to execute the command.
+* The find command will search for all files and directories that match the specified name pattern in the directory hierarchy and print their paths to the terminal.
+* For example, to search for all files with the extension .txt in the current directory and its subdirectories, you can use the following command:
+
+      find . -name "*.txt"
 
 > From this information I was able to gain a better understanding of the find function as well as explain the file -name use. I tried
 > the function out on my own in VS Code as well which is the code for the use I have put on this lab report. 
@@ -288,32 +287,33 @@ find . -name "*.txt"
 
 2. The find command in Bash is a powerful tool for searching for files and directories in a directory hierarchy based on various criteria. Here are some different ways to use the find command in the command line:
 
-Find files by name:
+* Find files by name:
 To search for files with a specific name, use the -name option followed by the name pattern you want to search for. For example, to search for all files with the name "example.txt" in the current directory and its subdirectories, use the following command:
 arduino
-Copy code
-find . -name "example.txt"
-Find files by type:
+
+    find . -name "example.txt"
+
+* Find files by type:
 To search for files of a specific type, use the -type option followed by the type of file you want to search for. For example, to search for all directories in the current directory and its subdirectories, use the following command:
-lua
-Copy code
-find . -type d
-Find files by size:
+
+    find . -type d
+
+* Find files by size:
 To search for files of a specific size, use the -size option followed by the size of the file you want to search for. For example, to search for all files larger than 1 MB in the current directory and its subdirectories, use the following command:
-arduino
-Copy code
-find . -size +1M
-Find files by modification time:
+
+    find . -size +1M
+
+* Find files by modification time:
 To search for files that have been modified within a specific time period, use the -mtime option followed by the number of days. For example, to search for all files modified within the last 7 days in the current directory and its subdirectories, use the following command:
-arduino
-Copy code
-find . -mtime -7
-Find files by permissions:
+
+    find . -mtime -7
+
+* Find files by permissions:
 To search for files with specific permissions, use the -perm option followed by the permission code. For example, to search for all files that are readable and writable by the owner in the current directory and its subdirectories, use the following command:
-arduino
-Copy code
-find . -perm -600
-These are just a few examples of how you can use the find command in different ways. The find command has many more options and can be combined with other commands to perform more complex searches and actions.
+
+    find . -perm -600
+
+* These are just a few examples of how you can use the find command in different ways. The find command has many more options and can be combined with other commands to perform more complex searches and actions.
 
 > From this search result I was able to understand more applications of find, and chose a few to use for this lab report. I tried 
 > out various functions on my own VS Code, and then selected a few for this lab report that provided me with interesting results. 
@@ -328,33 +328,33 @@ These are just a few examples of how you can use the find command in different w
 
 3. Sure, here are some more options you can use with the find command in Bash:
 
-Find files by user:
+* Find files by user:
 To search for files owned by a specific user, use the -user option followed by the username. For example, to search for all files owned by the user "john" in the current directory and its subdirectories, use the following command:
-arduino
-Copy code
-find . -user john
-Find files by group:
+
+    find . -user john
+
+* Find files by group:
 To search for files owned by a specific group, use the -group option followed by the group name. For example, to search for all files owned by the group "staff" in the current directory and its subdirectories, use the following command:
-arduino
-Copy code
-find . -group staff
-Find files by file system:
+
+    find . -group staff
+
+* Find files by file system:
 To search for files on a specific file system, use the -xdev option followed by the name of the file system. For example, to search for all files on the file system "/dev/sda1" in the current directory and its subdirectories, use the following command:
-arduino
-Copy code
-find . -xdev -mount -name "*.*"
+
+    find . -xdev -mount -name "*.*"
 The -mount option is used to only search the mounted file systems.
-Find files by inode:
+
+* Find files by inode:
 To search for files by inode number, use the -inum option followed by the inode number. For example, to search for a file with an inode number of 1234567 in the current directory and its subdirectories, use the following command:
-arduino
-Copy code
-find . -inum 1234567
-Find files by depth:
+
+    find . -inum 1234567
+
+* Find files by depth:
 To search for files based on their depth in the directory hierarchy, use the -maxdepth and -mindepth options followed by the maximum and minimum depths, respectively. For example, to search for all files at a depth of 2 in the current directory and its subdirectories, use the following command:
-lua
-Copy code
-find . -maxdepth 2 -type f
-This will search for all regular files at a depth of 2 in the directory hierarchy.
+
+    find . -maxdepth 2 -type f
+
+* This will search for all regular files at a depth of 2 in the directory hierarchy.
 These are just a few more examples of the many options you can use with the find command in Bash. The find command is a very powerful tool with many more options that can be combined to perform complex searches and actions.
 
 > I was not able to find enough functions I liked from the previous search, thus I prompted ChatGPT to provide me with more option. 
