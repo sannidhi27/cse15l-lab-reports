@@ -255,9 +255,12 @@ Output:
 - ChatGPT
     - Questions & Answers:
 ***
+
 1. how to use find -name in a directory.
-***
-A) The find command is a powerful tool for searching for files and directories in a directory hierarchy based on various criteria. The -name option is used to search for files or directories that match a particular name pattern.
+
+---
+
+1. The find command is a powerful tool for searching for files and directories in a directory hierarchy based on various criteria. The -name option is used to search for files or directories that match a particular name pattern.
 
 To use find -name in a directory, follow these steps:
 
@@ -276,10 +279,14 @@ find . -name "*.txt"
 
 > From this information I was able to gain a better understanding of the find function as well as explain the file -name use. I tried
 > the function out on my own in VS Code as well which is the code for the use I have put on this lab report. 
+
 ***
+
 2. how to use find in command line bash different ways.
-***
-A) The find command in Bash is a powerful tool for searching for files and directories in a directory hierarchy based on various criteria. Here are some different ways to use the find command in the command line:
+
+---
+
+2. The find command in Bash is a powerful tool for searching for files and directories in a directory hierarchy based on various criteria. Here are some different ways to use the find command in the command line:
 
 Find files by name:
 To search for files with a specific name, use the -name option followed by the name pattern you want to search for. For example, to search for all files with the name "example.txt" in the current directory and its subdirectories, use the following command:
@@ -312,10 +319,14 @@ These are just a few examples of how you can use the find command in different w
 > out various functions on my own VS Code, and then selected a few for this lab report that provided me with interesting results. 
 > Thus, the information I used from this search was implemented in this lab report through the application of the functions provided
 > in my own VS Code. 
+
 ***
+
 3. can you give me some more options?
-***
-A) Sure, here are some more options you can use with the find command in Bash:
+
+---
+
+3. Sure, here are some more options you can use with the find command in Bash:
 
 Find files by user:
 To search for files owned by a specific user, use the -user option followed by the username. For example, to search for all files owned by the user "john" in the current directory and its subdirectories, use the following command:
