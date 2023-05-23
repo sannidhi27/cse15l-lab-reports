@@ -256,11 +256,11 @@ Output:
     - Questions & Answers:
 ---
 
-1. **how to use find -name in a directory.**
+**how to use find -name in a directory.**
 
 ---
 
-1. The find command is a powerful tool for searching for files and directories in a directory hierarchy based on various criteria. The -name option is used to search for files or directories that match a particular name pattern.
+The find command is a powerful tool for searching for files and directories in a directory hierarchy based on various criteria. The -name option is used to search for files or directories that match a particular name pattern.
 
 To use find -name in a directory, follow these steps:
 
@@ -281,11 +281,11 @@ To use find -name in a directory, follow these steps:
 
 ***
 
-2. **how to use find in command line bash different ways.**
+**how to use find in command line bash different ways.**
 
 ---
 
-2. The find command in Bash is a powerful tool for searching for files and directories in a directory hierarchy based on various criteria. Here are some different ways to use the find command in the command line:
+The find command in Bash is a powerful tool for searching for files and directories in a directory hierarchy based on various criteria. Here are some different ways to use the find command in the command line:
 
 * Find files by name:
 To search for files with a specific name, use the -name option followed by the name pattern you want to search for. For example, to search for all files with the name "example.txt" in the current directory and its subdirectories, use the following command:
@@ -322,11 +322,11 @@ To search for files with specific permissions, use the -perm option followed by 
 
 ***
 
-3. **can you give me some more options?**
+**can you give me some more options?**
 
 ---
 
-3. Sure, here are some more options you can use with the find command in Bash:
+Sure, here are some more options you can use with the find command in Bash:
 
 * Find files by user:
 To search for files owned by a specific user, use the -user option followed by the username. For example, to search for all files owned by the user "john" in the current directory and its subdirectories, use the following command:
