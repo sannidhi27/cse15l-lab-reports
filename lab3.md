@@ -254,9 +254,9 @@ Output:
 - Website: [Link](https://adamtheautomator.com/bash-find/)
 - ChatGPT
     - Questions & Answers:
-***
+---
 
-1. how to use find -name in a directory.
+1. **how to use find -name in a directory.**
 
 ---
 
@@ -282,7 +282,7 @@ find . -name "*.txt"
 
 ***
 
-2. how to use find in command line bash different ways.
+2. **how to use find in command line bash different ways.**
 
 ---
 
@@ -322,7 +322,7 @@ These are just a few examples of how you can use the find command in different w
 
 ***
 
-3. can you give me some more options?
+3. **can you give me some more options?**
 
 ---
 
