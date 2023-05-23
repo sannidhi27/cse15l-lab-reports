@@ -291,27 +291,27 @@ The find command in Bash is a powerful tool for searching for files and director
 To search for files with a specific name, use the -name option followed by the name pattern you want to search for. For example, to search for all files with the name "example.txt" in the current directory and its subdirectories, use the following command:
 arduino
 
-    find . -name "example.txt"
+    ```find . -name "example.txt"```
 
 * Find files by type:
 To search for files of a specific type, use the -type option followed by the type of file you want to search for. For example, to search for all directories in the current directory and its subdirectories, use the following command:
 
-    find . -type d
+    ```find . -type d```
 
 * Find files by size:
 To search for files of a specific size, use the -size option followed by the size of the file you want to search for. For example, to search for all files larger than 1 MB in the current directory and its subdirectories, use the following command:
 
-    find . -size +1M
+    ```find . -size +1M```
 
 * Find files by modification time:
 To search for files that have been modified within a specific time period, use the -mtime option followed by the number of days. For example, to search for all files modified within the last 7 days in the current directory and its subdirectories, use the following command:
 
-    find . -mtime -7
+    ```find . -mtime -7```
 
 * Find files by permissions:
 To search for files with specific permissions, use the -perm option followed by the permission code. For example, to search for all files that are readable and writable by the owner in the current directory and its subdirectories, use the following command:
 
-    find . -perm -600
+    ```find . -perm -600```
 
 * These are just a few examples of how you can use the find command in different ways. The find command has many more options and can be combined with other commands to perform more complex searches and actions.
 
@@ -331,28 +331,28 @@ Sure, here are some more options you can use with the find command in Bash:
 * Find files by user:
 To search for files owned by a specific user, use the -user option followed by the username. For example, to search for all files owned by the user "john" in the current directory and its subdirectories, use the following command:
 
-    find . -user john
+    ```find . -user john```
 
 * Find files by group:
 To search for files owned by a specific group, use the -group option followed by the group name. For example, to search for all files owned by the group "staff" in the current directory and its subdirectories, use the following command:
 
-    find . -group staff
+    ```find . -group staff```
 
 * Find files by file system:
 To search for files on a specific file system, use the -xdev option followed by the name of the file system. For example, to search for all files on the file system "/dev/sda1" in the current directory and its subdirectories, use the following command:
 
-    find . -xdev -mount -name "*.*"
+    ```find . -xdev -mount -name "*.*"```
 The -mount option is used to only search the mounted file systems.
 
 * Find files by inode:
 To search for files by inode number, use the -inum option followed by the inode number. For example, to search for a file with an inode number of 1234567 in the current directory and its subdirectories, use the following command:
 
-    find . -inum 1234567
+    ```find . -inum 1234567```
 
 * Find files by depth:
 To search for files based on their depth in the directory hierarchy, use the -maxdepth and -mindepth options followed by the maximum and minimum depths, respectively. For example, to search for all files at a depth of 2 in the current directory and its subdirectories, use the following command:
 
-    find . -maxdepth 2 -type f
+    ```find . -maxdepth 2 -type f```
 
 * This will search for all regular files at a depth of 2 in the directory hierarchy.
 These are just a few more examples of the many options you can use with the find command in Bash. The find command is a very powerful tool with many more options that can be combined to perform complex searches and actions.
